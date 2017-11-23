@@ -1,3 +1,61 @@
-<p>
-  door-body works!
-</p>
+<div class="main">
+	<div style="height: 300px">
+		<h3>Select Door Type</h3>
+		<div>
+			<div class="left-align-div">
+				<input type="radio" name="doorType" (click)="doorType(door.internal)" ngModel>{{door.internal.name}}
+			</div>
+			<div class="right-align-div">
+				<input type="radio" name="doorType" (click)="doorType(door.external)">{{door.external.name}}	
+			</div>	
+		</div>
+		<div class="left-align-div">
+			<img class="doorTypeImg" [src]="door.internal.imgURL" [ngClass]="{'img-shadow': doorTypeSelected=='Internal'}">
+			<span>{{door.internal.description}}</span>
+		</div>
+		<div class="right-align-div">
+			<img class="doorTypeImg" [src]="door.external.imgURL" [ngClass]="{'img-shadow': doorTypeSelected=='External'}">
+			<span>{{door.external.description}}</span>
+		</div>
+	</div>
+	<div style="height: 70px;">
+		<h3>Select Look</h3>
+		<div class="left-align-div">
+			<input type="radio" name="lookType" (click)="lookType = 'wood'">Wood Finish
+		</div>
+		<div class="right-align-div">
+			<input type="radio" name="lookType" (click)="lookType = 'coloured'">Coloured
+		</div>
+	</div>
+	<div *ngIf="lookType == 'wood'">
+		<div *ngFor="let wood of door.wood_finish; let i = index" class="wood_div">
+			<h3>{{wood.name}}</h3>
+			<img [src]="wood.imgURL" (click)="selectedWood(wood,i)" [ngClass]="{'img-shadow': i == woodSelectedIndex}">
+		</div>
+	</div>
+	<div *ngIf="lookType == 'coloured'">
+		<div *ngFor="let color of door.coloured; let i = index" class="coloured_div">
+			<h3>{{color.name}}</h3>
+			<img [src]="color.imgURL" (click)="selectedColoured(color,i)" [ngClass]="{'img-shadow': i == colouredSelectedIndex}">
+		</div>
+	</div>
+	<div style="padding: 0 2%;">
+		<h3>Select Design</h3>
+		<div *ngFor="let design of door.designs; let i = index" class="design_div">
+			<h3>{{design.name}}</h3>
+			<img [src]="design.imgURL" (click)="selectedDesign(design,i)" [ngClass]="{'img-shadow': i == designSelectedIndex}">
+		</div>
+	</div>
+	<div>
+		<h3>Select Infills</h3>
+		<div *ngFor="let infill of door.infills" style="display:inline-block;width: 33%; text-align: center;">
+			<input type="radio" name="infillType" (click)="selectedInfill(infill)">{{infill.name}}
+		</div>
+	</div>
+	<div>
+		<h3>Accessories</h3>
+		<div *ngFor="let accessories of door.accessories" style="display: inline-block;width: 25%; text-align: center;">
+			<input type="radio" name="accessoriesType" (click)="selectedAccessories(accessories)">{{accessories.name}}
+		</div>
+	</div>
+</div>

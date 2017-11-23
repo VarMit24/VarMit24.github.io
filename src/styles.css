@@ -1,1 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+body{
+	margin: 0;
+	color: darkblue;
+}
+.left-align-div{
+	    width: 50%;
+    float: left;
+    text-align: center;
+}
+.right-align-div{
+	float: right;
+    width: 50%;
+    text-align: center;
+}

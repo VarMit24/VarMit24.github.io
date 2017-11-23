@@ -6,159 +6,159 @@ export class DoorServiceService {
   constructor() { }
 
   private door: any = {
-  	"iternal" : {
+  	"internal" : {
   		"name" : "Internal",
   		"imgURL" : "./../assets/internal_peeble.png",
-  		"desciprtion" : "For bedrooms, door, kitchen etc.",
-  		"price" : "10000"
+  		"description" : "For bedrooms, door, kitchen etc.",
+  		"price" : 10000
   	},
   	"external" : {
   		"name" : "External",
   		"imgURL" : "./../assets/external_wave.PNG",
-  		"desciprtion" : "For Main enterance",
-  		"price" : "20000"
+  		"description" : "For Main enterance",
+  		"price" : 20000
   	},
-  	"design" : [
+  	"designs" : [
   		{
   			"name" : "Peeble",
   			"imgURL" : "./../assets/internal_peeble.png",
-  			"price" : "1000"
+  			"price" : 1000
   		},
   		{
   			"name" : "Coast",
-  			"imgURL" : "./../assets/coast.png",
-  			"price" : "1250"
+  			"imgURL" : "./../assets/coast.PNG",
+  			"price" : 1250
   		},
   		{
   			"name" : "Ripple",
-  			"imgURL" : "./../assets/ripple.png",
-  			"price" : "1000"
+  			"imgURL" : "./../assets/ripple.PNG",
+  			"price" : 1000
   		},
   		{
   			"name" : "Wave",
-  			"imgURL" : "./../assets/external_wave.png",
-  			"price" : "1200"
+  			"imgURL" : "./../assets/external_wave.PNG",
+  			"price" : 1200
   		},
   		{
   			"name" : "Shell",
-  			"imgURL" : "./../assets/shell.png",
-  			"price" : "1500"
+  			"imgURL" : "./../assets/shell.PNG",
+  			"price" : 1500
   		},
   		{
   			"name" : "No Design",
-  			"imgURL" : "./../assets/nodesign.png",
-  			"price" : "0"
+  			"imgURL" : "./../assets/nodesign.PNG",
+  			"price" : 0
   		}
   	],
   	"wood_finish" : [
   		{
   			"name" : "Lava Teak",
-  			"imgURL" : "./../assets/lavateak.png",
-  			"price" : "1000"
+  			"imgURL" : "./../assets/lavateak.PNG",
+  			"price" : 1000
   		},
   		{
   			"name" : "Sun Teak",
-  			"imgURL" : "./../assets/sunteak.png",
-  			"price" : "1250"
+  			"imgURL" : "./../assets/sunteak.PNG",
+  			"price" : 1250
   		},
   		{
   			"name" : "Trunk Mahogany",
-  			"imgURL" : "./../assets/trunk_mahogany.png",
-  			"price" : "1000"
+  			"imgURL" : "./../assets/trunk_mahogany.PNG",
+  			"price" : 1000
   		},
   		{
   			"name" : "Nest Mahogany",
-  			"imgURL" : "./../assets/nest_mahogany.png",
-  			"price" : "1200"
+  			"imgURL" : "./../assets/nest_mahogany.PNG",
+  			"price" : 1200
   		}
   	],
   	"coloured" : [
   		{
   			"name" : "Volcano Red",
-  			"imgURL" : "./../assets/volcano_red.png",
-  			"price" : "1000"
+  			"imgURL" : "./../assets/volcano_red.PNG",
+  			"price" : 1000
   		},
   		{
   			"name" : "Fire Red",
-  			"imgURL" : "./../assets/fire_red.png",
-  			"price" : "1250"
+  			"imgURL" : "./../assets/fire_red.PNG",
+  			"price" : 1250
   		},
   		{
   			"name" : "Sand Grey",
-  			"imgURL" : "./../assets/sand_grey.png",
-  			"price" : "1000"
+  			"imgURL" : "./../assets/sand_grey.PNG",
+  			"price" : 1000
   		},
   		{
   			"name" : "Pearl White",
-  			"imgURL" : "./../assets/peral_white.png",
-  			"price" : "1200"
+  			"imgURL" : "./../assets/pearl_white.PNG",
+  			"price" : 1200
   		},
   		{
   			"name" : "Sapphire Blue",
-  			"imgURL" : "./../assets/sapphire_blue.png",
-  			"price" : "1000"
+  			"imgURL" : "./../assets/sapphire_blue.PNG",
+  			"price" : 1000
   		},
   		{
   			"name" : "Ocean Blue",
-  			"imgURL" : "./../assets/ocean_blue.png",
-  			"price" : "1250"
+  			"imgURL" : "./../assets/ocean_blue.PNG",
+  			"price" : 1250
   		},
   		{
   			"name" : "Crystal Blue",
-  			"imgURL" : "./../assets/crystal_blue.png",
-  			"price" : "1000"
+  			"imgURL" : "./../assets/crystal_blue.PNG",
+  			"price" : 1000
   		},
   		{
   			"name" : "Forest Brown",
-  			"imgURL" : "./../assets/forest_brown.png",
-  			"price" : "1200"
+  			"imgURL" : "./../assets/forest_brown.PNG",
+  			"price" : 1200
   		},
   		{
   			"name" : "Snowflake White",
-  			"imgURL" : "./../assets/snowflake_white.png",
-  			"price" : "1000"
+  			"imgURL" : "./../assets/snowflake_white.PNG",
+  			"price" : 1000
   		},
   		{
   			"name" : "Moon White",
-  			"imgURL" : "./../assets/moon_white.png",
-  			"price" : "1250"
+  			"imgURL" : "./../assets/moon_white.PNG",
+  			"price" : 1250
   		},
   		{
   			"name" : "Cloud White",
-  			"imgURL" : "./../assets/cloud_white.png",
-  			"price" : "1000"
+  			"imgURL" : "./../assets/cloud_white.PNG",
+  			"price" : 1000
   		}
   	],
   	"infills": [
   		{
   			"name" : "HONEYCOMB",
-  			"price" : "100"
+  			"price" : 100
   		},
   		{
   			"name" : "MINERAL WOOL",
-  			"price" : "200"
+  			"price" : 200
   		},
   		{
   			"name" : "POLYURETHANE FOAM",
-  			"price" : "300"
+  			"price" : 300
   		}
   	],
-  	"accesories": [
+  	"accessories": [
   		{
   			"name" : "PEEPHOLE",
-  			"price" : "100"
+  			"price" : 100
   		},
   		{
   			"name" : "SECONDARY LOCK",
-  			"price" : "200"
+  			"price" : 200
   		},
   		{
   			"name" : "DOOR CLOSER",
-  			"price" : "300"
+  			"price" : 300
   		},
   		{
   			"name" : "FLY MESH",
-  			"price" : "1000"
+  			"price" : 1000
   		}
   	],
 
