@@ -14,6 +14,7 @@ export class DoorBodyComponent implements OnInit {
 
   @Output() invoiceEventEmitter = new EventEmitter<any>();
   door:any;
+  lookType:any;
   invoice ={
   	doorType:{"price":0},
   		lookType:{"price":0},
@@ -24,7 +25,7 @@ export class DoorBodyComponent implements OnInit {
   designSelectedIndex = -1;
   colouredSelectedIndex = -1;
   woodSelectedIndex = -1;
-  doorTypeSelected = -1;
+  doorTypeSelected = '';
   
   ngOnInit() {
   	this.door = this._doorService.getDoor();

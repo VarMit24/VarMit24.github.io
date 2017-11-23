@@ -10,11 +10,11 @@
 			</div>	
 		</div>
 		<div class="left-align-div">
-			<img class="doorTypeImg" [src]="door.internal.imgURL" [ngClass]="{'img-shadow': doorTypeSelected=='Internal'}">
+			<img class="doorTypeImg" [src]="door.internal.imgURL" [ngClass]="{'img-shadow': doorTypeSelected==='Internal'}">
 			<span>{{door.internal.description}}</span>
 		</div>
 		<div class="right-align-div">
-			<img class="doorTypeImg" [src]="door.external.imgURL" [ngClass]="{'img-shadow': doorTypeSelected=='External'}">
+			<img class="doorTypeImg" [src]="door.external.imgURL" [ngClass]="{'img-shadow': doorTypeSelected==='External'}">
 			<span>{{door.external.description}}</span>
 		</div>
 	</div>
