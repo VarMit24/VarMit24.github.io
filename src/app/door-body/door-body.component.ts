@@ -13,9 +13,7 @@ export class DoorBodyComponent implements OnInit {
   constructor(private _doorService: DoorServiceService) { }
 
   ngOnInit() {
-  	this._doorService.getDoor().map(
-  			(data: Response) => console.log(data);
-  		);
+  	console.log(this._doorService.getDoor());
   }
 
 }

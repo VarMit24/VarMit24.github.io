@@ -5,7 +5,7 @@ export class DoorServiceService {
 
   constructor() { }
 
-  door : {
+  private door: any = {
   	"iternal" : {
   		"name" : "Internal",
   		"imgURL" : "./../assets/internal_peeble.png",
