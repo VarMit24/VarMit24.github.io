@@ -1,14 +1,13 @@
 <div class="header">
 	<div class="left">
-		<h1>Residential</h1>
-		<span class="logo">
-			<img src="./../assets/residential-doors-logo.png">
-		</span>
+		<img src="./../assets/logo.png" class="logo">
+		<h3>Residential</h3>
 		<h4>Doors</h4>
+		<img src="./../assets/residential-doors-logo.png" style="width: 7%">
 	</div>
 	
 	<div class="right">
-		<h3>Invoice</h3>
+		<h3>Amount</h3>
 		<div *ngIf="invoiceData?.doorType.name != undefined">
 			<div class="left-align-div">{{invoiceData?.doorType.name}}
 			</div>
